@@ -1,19 +1,18 @@
-##  A personal attempt to create a web application
+##  Portfolio Application
 
 #### Technology Stack
 - ReactJS
-- apiary.io for API documentation (consider switching to Swagger.io)
+- apiary.io for API documentation
 - MongoDB
 - Express 4.0
 
 #### Setup Instructions 
-
-- git clone https://github.com/svikasg/personal-website.git
+- git clone https://github.com/saivikas7875/portfolio
 - npm install
 
 #### Development Commands
-- start server    -  npm run lag-gayi
-- run unit tests   - npm run laal-ishq
-- watch unit tests - npm run laal-ishq:watch
+- start server    -  npm run start
+- run unit tests   - npm run test
+- watch unit tests - npm run test:watch
 
 ### Website - http://svikasg.github.io/personal-website

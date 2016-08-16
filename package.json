@@ -5,9 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/svikasg/personal-website",
   "scripts": {
-    "lag-gayi": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "laal-ishq": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "laal-ishq:watch": "npm run test -- --watch"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch"
   },
   "author": "Sai Vikas Gopal",
   "license": "Copyright (C) Sai Vikas Gopal - All Rights Reserved Unauthorized copying of this file, via any medium is strictly prohibited Proprietary and confidential Written by Sai Vikas Gopal <saivikas7875@gmail.com>, March 2016",
@@ -28,6 +28,8 @@
   "dependencies": {
     "axios": "^0.9.1",
     "babel-preset-stage-1": "^6.1.18",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
