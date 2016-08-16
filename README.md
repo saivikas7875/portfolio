@@ -15,4 +15,4 @@
 - run unit tests   - npm run test
 - watch unit tests - npm run test:watch
 
-### Website - http://svikasg.github.io/personal-website
+### Website - https://saivikas7875.github.io/portfolio/
