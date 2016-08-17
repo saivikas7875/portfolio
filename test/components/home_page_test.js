@@ -1,5 +1,5 @@
 import { renderComponent, expect }from '../test_helper';
-import HomePage from '../../src/components/home_page';
+import HomePage from '../../src/seed/components/home_page';
 
 describe ('HomePage', () => {
 

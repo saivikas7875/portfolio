@@ -7,6 +7,7 @@ const webpack = require('webpack');
 const config = {
     entry: path.join(__dirname, './src/index.js'),
     output: {
+        library: 'portfolio',
         libraryTarget: 'umd',
         path: path.join(__dirname, '/dist'),
         filename: `${pkg.name}.js`
@@ -27,6 +28,14 @@ const config = {
                 commonjs: 'react-dom',
                 amd: 'react-dom'
               }
+            },
+            {
+                'react-addons-css-transition-group': {
+                    commonjs: 'react-addons-css-transition-group',
+                    commonjs2: 'react-addons-css-transition-group',
+                    amd: 'react-addons-css-transition-group',
+                    root: ['React', 'addons', 'CSSTransitionGroup']
+                }
             }
         ],
         module: {

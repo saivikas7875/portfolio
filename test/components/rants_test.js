@@ -1,5 +1,5 @@
 import { renderComponent, expect }from '../test_helper';
-import Rants from '../../src/components/rants';
+import Rants from '../../src/seed/components/rants';
 
 describe ('Rants', () => {
 

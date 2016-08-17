@@ -8,6 +8,10 @@ export default class PreviewIndex extends Component {
             <html>
                 <head>
                     <title>{'Portfolio'}</title>
+                    <link
+                        href='./deere.ico'
+                        rel='icon'
+                    />
                 </head>
                 <body>
                     <div className='content'></div>

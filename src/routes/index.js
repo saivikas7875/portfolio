@@ -1,3 +1,5 @@
-export default {
+import home from './home';
 
-}
+export default {
+    ...home
+};

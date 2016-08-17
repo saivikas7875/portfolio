@@ -1,5 +1,5 @@
 import { renderComponent, expect }from '../test_helper';
-import NavBar from '../../src/components/nav_bar';
+import NavBar from '../../src/seed/components/nav_bar';
 
 describe ('NavBar', () => {
 

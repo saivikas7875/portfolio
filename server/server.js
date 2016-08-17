@@ -18,6 +18,17 @@ server.connection({
     routes: {cors: true}
 });
 
+server.route({
+    method: 'GET',
+    path: '/',
+    handler: function (request, reply) {
+
+        reply.view('index');
+
+    }
+
+});
+
 server.register(Vision, function (err) {
 
     if (err) {
