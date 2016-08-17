@@ -1,16 +1,15 @@
+import './index.scss';
+import 'babel-core/polyfill';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { Router, hashHistory, browserHistory } from 'react-router';
-import { createStore, applyMiddleware } from 'redux';
-import routes from './routes';
+import AppProvider from './app-provider';
+import {getStore} from './store-factory';
+import {render} from 'react-dom';
 
-import reducers from './reducers';
+const store = getStore();
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
-
-ReactDOM.render(
-  <Provider store={createStoreWithMiddleware(reducers)}>
-		<Router history={hashHistory} routes={routes} />
-  </Provider>
-  , document.querySelector('.container'));
+render(
+    <AppProvider
+        store={store}
+    />,
+    document.querySelector('.content')
+);
