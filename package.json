@@ -8,7 +8,7 @@
     "url": "https://github.com/svikasg/personal-website"
   },
   "scripts": {
-    "build": "rimraf dist && webpack -p",
+    "build": "rimraf public && webpack -p",
     "eslint": "eslint ./src ./test --cache",
     "start": "rimraf output/server-dist && babel-node server/server",
     "stylelint": "stylelint --syntax scss ./styles/**/*.scss ./src/**/*.scss",

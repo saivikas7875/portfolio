@@ -9,7 +9,7 @@ const config = {
     output: {
         library: 'portfolio',
         libraryTarget: 'umd',
-        path: path.join(__dirname, '/dist'),
+        path: path.join(__dirname, '/public'),
         filename: `${pkg.name}.js`
     },
         externals: [
