@@ -15,24 +15,19 @@ const config = {
 
     module: {
         loaders: [
-        {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: 'babel'
-        },
-        {
-            test: /\.s?css$/,
-            loaders: [
-                'style',
-                'css',
-                'sass',
-                'postcss'
-            ]
-        },
-        {
-            test: /\.(ttf|eot|svg|woff)$/,
-            loader: 'file'
-        }
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loaders: ['babel', 'istanbul-instrumenter']
+            },
+            {
+                test: /\.s?css$/,
+                loaders: ['style', 'css', 'sass', 'postcss']
+            },
+            {
+                test: /\.(ttf|eot|svg|woff)$/,
+                loader: 'file'
+            }
         ]
     },
     postcss: [

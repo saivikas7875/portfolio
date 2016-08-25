@@ -19,14 +19,7 @@ const config = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loaders: [
-                    'react-hot'
-                ]
-            },
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loaders: [
-                    'babel'
+                    'react-hot', 'babel'
                 ]
             },
             {
