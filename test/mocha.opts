@@ -1,0 +1,8 @@
+--check-leaks
+--colors
+--recursive
+--reporter progress
+--require mocha-clean
+--require test/utils/babel
+--require test/utils/test-helper
+--timeout 250
