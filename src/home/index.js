@@ -3,11 +3,9 @@ import React, {PropTypes} from 'react';
 import {FormattedMessage} from 'react-intl';
 
 const HomeContainer = props =>
-    <section className='app-container'>
-        <section className='app-header'>
-            <section className='app-title'>
-                <FormattedMessage id='PORTFOLIO'/>
-            </section>
+    <section className='home-container'>
+        <section className='app-title'>
+            <FormattedMessage id='PORTFOLIO'/>
         </section>
         <section className='app-body'>
             {props.children}

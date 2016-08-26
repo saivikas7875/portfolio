@@ -1,9 +1,10 @@
+import {FormattedMessage} from 'react-intl';
 import HomeContainer from '../../../src/home';
 import React from 'react';
 import {expect} from 'code';
 import {shallow} from 'enzyme';
 
-describe('Given the <HomeContainer/> component', () => {
+describe('<HomeContainer/>', () => {
 
 	let homeContainerEl,
 		testProps;
@@ -23,6 +24,72 @@ describe('Given the <HomeContainer/> component', () => {
     it('should be a section', () => {
 
         expect(homeContainerEl.type()).string().equal('section');
+
+    });
+
+    it('should have a unique class name', () => {
+
+        expect(homeContainerEl.props().className).string().equal('home-container');
+
+    });
+
+    describe('and the app-title', () => {
+
+        let appTitleEl;
+
+        beforeEach(() => {
+
+            appTitleEl = homeContainerEl.childAt(0);
+
+        });
+
+        it('should be a section', () => {
+
+            expect(appTitleEl.type()).string().equal('section');
+
+        });
+
+        it('should have a unique class name', () => {
+
+            expect(appTitleEl.props().className).string().equal('app-title');
+
+        });
+
+        it('should be translated', () => {
+
+            expect(appTitleEl.childAt(0).type()).function().equal(FormattedMessage);
+            expect(appTitleEl.childAt(0).props().id).string().equal('PORTFOLIO');
+
+        });
+
+    });
+
+    describe('and the app body', () => {
+
+        let appBodyEl;
+
+        beforeEach(() => {
+
+            appBodyEl = homeContainerEl.childAt(1);
+
+        });
+
+        it('should be a section', () => {
+
+            expect(appBodyEl.type()).string().equal('section');
+
+        });
+
+        it('should have a unique class name', () => {
+
+            expect(appBodyEl.props().className).string().equal('app-body');
+
+        });
+
+        it('should display the app content', () => {
+
+            expect(appBodyEl.props().children).equal(testProps.children);
+        });
 
     });
 
