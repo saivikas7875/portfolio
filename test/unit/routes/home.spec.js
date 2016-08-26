@@ -10,8 +10,8 @@ describe('Home container route', () => {
     beforeEach(() => {
 
         match({
-            routes: route,
-            location: '/'
+            location: '/',
+            routes: route
         }, (err, redirectLocation, renderProps) => {
 
             matchedRoutes = renderProps;

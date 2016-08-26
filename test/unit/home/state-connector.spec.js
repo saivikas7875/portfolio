@@ -18,14 +18,14 @@ describe('Given the app container state connector', () => {
         });
 
         fakeStore = {
+            dispatch: () => ({}),
             getState: () => rootState,
-            subscribe: () => ({}),
-            dispatch: () => ({})
+            subscribe: () => ({})
         };
 
         testProps = {
-            store: fakeStore,
-            routeParams: {}
+            routeParams: {},
+            store: fakeStore
         };
 
         homeConnectedEl = shallow(<HomeConnectedContainer {...testProps}/> );

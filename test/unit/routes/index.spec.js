@@ -12,8 +12,8 @@ describe('Given the routes', () => {
         beforeEach(() => {
 
             match({
-                routes,
-                location: '/'
+                location: '/',
+                routes
             }, (err, redirectLocation, renderProps) => {
 
                 matchedRoutes = renderProps;
