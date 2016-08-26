@@ -1,0 +1,14 @@
+{
+  "extends": "stylelint-config-semantic",
+  "rules": {
+    "at-rule-empty-line-before": null,
+    "declaration-block-properties-order": "alphabetical",
+    "no-browser-hacks": null,
+    "no-indistinguishable-colors": null,
+    "selector-max-specificity": "0,4,0",
+    "selector-no-combinator": null,
+    "selector-no-type": null,
+    "selector-no-universal": null,
+    "no-descending-specificity": null
+  }
+}

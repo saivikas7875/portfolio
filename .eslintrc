@@ -1,0 +1,25 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "sorting"
+  ],
+  "rules": {
+    "no-magic-numbers": 0,
+    "linebreak-style": 0,
+    "react/no-set-state": 0,
+    "react/jsx-no-bind": 0,
+    "react/jsx-handler-names": 0,
+    "newline-before-return": 0,
+    "max-statements": 0,
+    "max-nested-callbacks": 0,
+    "sorting/sort-object-props": [
+      1,
+      {
+        "ignoreCase": false,
+        "ignoreMethods": false
+      }
+    ],
+    "generator-star-spacing": 0,
+    "require-yield": 0
+  }
+}

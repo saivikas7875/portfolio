@@ -1,0 +1,72 @@
+FORMAT: 1A
+HOST: http://svikasg.github.io/personal-website/
+
+# Website API
+
+This is a simple API for allowing users to view my personal website.
+
+## Articles Collection [/articles]
+
+### List All Articles [GET]
+
+
++ Response 200 (application/json)
+
+        [
+            {
+                "name": "Introduction and Purpose",
+                "date": "2015-08-05T08:40:51.620Z"
+            }
+        ]
+            
+            
+## Create a New Article [/article]
+
+
+### Create an article [POST]
+
+
++ Request (application/json)
+
+        {
+            "name": "What's new"
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /article/2
+
+    + Body
+
+            {
+                "name": "Favourite programming language?",
+                "date": "2015-08-05T08:40:51.620Z",
+                "id": 1
+            }
+            
+## Article Entity [/article/{id}]
+            
+### Get an article [GET]
+
++ Parameters
+    + id (number) - id of the Article
+
++ Response 200 (application/json)
+
+        [
+            {
+                "name": "Introduction and Purpose",
+                "date": "2015-08-05T08:40:51.620Z"
+            }
+        ]
+        
+### Delete an article [DELETE]        
+        
+
+
++ Parameters
+    + id (number) - id of the Article
+
++ Response 204
