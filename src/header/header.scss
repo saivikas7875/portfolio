@@ -1,0 +1,42 @@
+.header {
+
+    margin: auto;
+    margin-bottom: 20px;
+
+    .main-bar {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        .app-title {
+            color: #f12b22;
+            font-size: 32px;
+        }
+
+        .links ul {
+
+            list-style: none;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            li {
+                margin-right: 10px;
+            }
+
+            a {
+                color: #001dff;
+            }
+
+        }
+    }
+
+
+
+    .section-divider {
+        height: 20px;
+        width: 100%;
+        background-color: lime;
+    }
+
+}

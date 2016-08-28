@@ -1,12 +1,10 @@
 import './home.scss';
 import React, {PropTypes} from 'react';
-import {FormattedMessage} from 'react-intl';
+import Header from '../header';
 
 const HomeContainer = props =>
     <section className='home-container'>
-        <section className='app-title'>
-            <FormattedMessage id='PORTFOLIO'/>
-        </section>
+        <Header/>
         <section className='app-body'>
             {props.children}
         </section>

@@ -1,4 +1,4 @@
-import {FormattedMessage} from 'react-intl';
+import Header from '../../../src/header';
 import HomeContainer from '../../../src/home';
 import React from 'react';
 import {expect} from 'code';
@@ -33,32 +33,19 @@ describe('<HomeContainer/>', () => {
 
     });
 
-    describe('and the app-title', () => {
+    describe('and the header', () => {
 
-        let appTitleEl;
+        let headerEl;
 
         beforeEach(() => {
 
-            appTitleEl = homeContainerEl.childAt(0);
+            headerEl = homeContainerEl.childAt(0);
 
         });
 
-        it('should be a section', () => {
+        it('should be using the <Header/> component', () => {
 
-            expect(appTitleEl.type()).string().equal('section');
-
-        });
-
-        it('should have a unique class name', () => {
-
-            expect(appTitleEl.props().className).string().equal('app-title');
-
-        });
-
-        it('should be translated', () => {
-
-            expect(appTitleEl.childAt(0).type()).function().equal(FormattedMessage);
-            expect(appTitleEl.childAt(0).props().id).string().equal('PORTFOLIO');
+            expect(headerEl.type()).function().equal(Header);
 
         });
 
