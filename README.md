@@ -1,3 +1,6 @@
+[![codecov](https://codecov.io/gh/saivikas7875/portfolio/branch/master/graph/badge.svg)](https://codecov.io/gh/saivikas7875/portfolio)
+
+
 ##  Portfolio Application
 
 #### Technology Stack
