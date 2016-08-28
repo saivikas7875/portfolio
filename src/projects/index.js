@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Projects = () =>
-    <section>
+    <section className='projects'>
         {'Projects'}
     </section>;
 

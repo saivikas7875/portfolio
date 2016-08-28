@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () =>
-    <section>
+    <section className='about'>
         {'About'}
     </section>;
 
